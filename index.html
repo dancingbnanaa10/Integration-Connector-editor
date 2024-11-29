@@ -11,11 +11,57 @@
 </head>
 
 <body>
+  <div class="Mcont">
+    <div class="col1">
+      <div class="controls">
+        <button id="addBlock">Add Block</button>
+        <button id="generate" onclick="genFront()">GenCode</button>
+      </div>
+      <div class="container">
+        <!-- Blocks will be dynamically added here -->
+      </div>
+      <!--
+      <div class="textareaContainer">
+        
+        <button id="copyButton">Select All / Copy Code</button>
+    
+        
+        <textarea id="codeTextarea" readonly>
+          code will appear there
+        </textarea>
+      </div> -->
+      <div class="BendContainer">
+        <textarea id="BendTA-1" placeholder="Your code here..." readonly></textarea>
+        <div class="buttonContainer">
+          <button class="copyButton" onclick="copyToClipboard('BendTA-1')">Copy to Clipboard</button>
+        </div>
+      </div>
+    </div>
+    <div class="col2">
+      <div class="BendContainer">
+        <!-- Inputs -->
+        <input type="text" placeholder="CSV id" id="stringInput1">
+        <input type="number" placeholder="CSV range A" id="numberInput1">
+        <input type="number" placeholder="CSV range B" id="numberInput2">
+        <input type="text" placeholder="output" id="stringInput2">
+        <input type="number" placeholder="If map = 1" id="numberInput3">
+        <input type="number" placeholder="Column number" id="numberInput4">
+        <input type="number" placeholder="Row number" id="numberInput5">
+    
+        <!-- Button to collect data -->
+        <div class="buttonContainer">
+          <button class="addButton" onclick="genBendCode()">GenCode</button>
+        </div>
+      </div>
+      <div class="BendContainer">
+        <textarea id="BendTA-2" placeholder="Your code here..." readonly></textarea>
+        <div class="buttonContainer">
+          <button class="copyButton" onclick="copyToClipboard('BendTA-2')">Copy to Clipboard</button>
+        </div>
+      </div>
+    </div>
+  </div>
   
-<div class="container">
-  
-</div>
-
 
 <script src="./js/eng.js"></script>
 </body>

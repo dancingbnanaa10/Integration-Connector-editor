@@ -1,0 +1,234 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+.Mcont
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.col1
+{
+    width: 50%;
+}
+.col2
+{
+    width: 50%;
+}
+  .controls {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    width: 300px;
+    margin: 0 auto;
+    border: 2px solid black;
+    padding: 10px;
+    background: #f9f9f9;
+  }
+  
+  .block {
+    border: 2px solid red;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    cursor: grab;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+  }
+  
+  .block.dragging {
+    opacity: 0.5;
+    transform: scale(1.05);
+  }
+  
+  .header {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .list {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .remove-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .remove-btn:hover {
+    background-color: #ff0000;
+  }
+  
+  .inputs-container {
+    margin-top: 10px;
+  }
+  
+  input, select {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+  }
+  
+  input[type="number"] {
+    width: 48%;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+  }
+  .textareaContainer {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  /* Style for the button */
+  #copyButton {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  #copyButton:hover {
+    background-color: #45a049;
+  }
+
+  /* Style for the textarea */
+  #codeTextarea {
+    width: 100%;
+    height: 300px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ccc;
+    resize: none;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+  }
+
+  
+  .BendContainer {
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+  }
+  .BendContainer textarea {
+    width: 90%;
+    height: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+  }
+
+
+  .BendContainer input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .BendContainer input::placeholder{
+    text-align: center;
+  }
+
+  .BendContainer input[type="number"] {
+    width: calc(50% - 20px);
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .BendContainer input[type="number"]:last-child {
+    margin-right: 0;
+  }
+
+  .BendContainer input[type="text"] {
+    width: calc(50% - 20px);
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .BendContainer input[type="text"]:last-child {
+    margin-right: 0;
+  }
+
+  .buttonContainer {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .addButton {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+
+  .addButton:hover {
+    background-color: #45a049;
+  }
+  .copyButton {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  .copyButton:hover {
+    background-color: #0056b3;
+  }
